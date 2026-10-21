@@ -1,0 +1,143 @@
+- id: OWASP-A01-2025
+  framework: OWASP_TOP10_2025
+  function: null
+  category: Broken Access Control
+  category_id: A01
+  description: Users can act outside their intended permissions, including unauthorized access to data,
+    functions and internal resources (SSRF is now part of this category).
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - rbac-auth
+  - pentest-module
+- id: OWASP-A02-2025
+  framework: OWASP_TOP10_2025
+  function: null
+  category: Security Misconfiguration
+  category_id: A02
+  description: 'Systems, frameworks or servers are set up insecurely: default settings, missing hardening,
+    missing security headers, verbose errors.'
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - pentest-module
+  - website-mode-b
+- id: OWASP-A03-2025
+  framework: OWASP_TOP10_2025
+  function: null
+  category: Software Supply Chain Failures
+  category_id: A03
+  description: Weaknesses in dependencies, build processes or distribution of third-party software and
+    components.
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: OWASP-A04-2025
+  framework: OWASP_TOP10_2025
+  function: null
+  category: Cryptographic Failures
+  category_id: A04
+  description: Missing or weak cryptography exposes sensitive data in transit or at rest, including weak
+    password hashing.
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - website-mode-b
+  - data-masking
+- id: OWASP-A05-2025
+  framework: OWASP_TOP10_2025
+  function: null
+  category: Injection
+  category_id: A05
+  description: Untrusted input is interpreted as commands or queries, such as SQL injection and cross-site
+    scripting.
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - rule-engine
+  - haproxy-connector
+  - pentest-module
+  - website-mode-b
+- id: OWASP-A06-2025
+  framework: OWASP_TOP10_2025
+  function: null
+  category: Insecure Design
+  category_id: A06
+  description: Missing or ineffective security controls caused by design flaws, not implementation bugs.
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - website-mode-b
+  - policy-guard
+- id: OWASP-A07-2025
+  framework: OWASP_TOP10_2025
+  function: null
+  category: Authentication Failures
+  category_id: A07
+  description: 'Weak login and session handling lets attackers impersonate users: brute force, credential
+    stuffing, weak passwords.'
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - rbac-auth
+  - rule-engine
+  - playbook-engine
+  - pentest-module
+- id: OWASP-A08-2025
+  framework: OWASP_TOP10_2025
+  function: null
+  category: Software or Data Integrity Failures
+  category_id: A08
+  description: Code or data is trusted without integrity checks, such as unverified updates, unsafe deserialization
+    or unrestricted uploads.
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - rule-engine
+  - playbook-engine
+  - pentest-module
+- id: OWASP-A09-2025
+  framework: OWASP_TOP10_2025
+  function: null
+  category: Security Logging and Alerting Failures
+  category_id: A09
+  description: Missing logging, monitoring or alerting lets attacks go unnoticed or uninvestigated.
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - log-shipper
+  - audit-log
+  - detector
+- id: OWASP-A10-2025
+  framework: OWASP_TOP10_2025
+  function: null
+  category: Mishandling of Exceptional Conditions
+  category_id: A10
+  description: Poor error and exception handling leads to unpredictable behavior, failing open, or information
+    leaks.
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - graceful-degradation
+  - website-mode-b
+  - pentest-module

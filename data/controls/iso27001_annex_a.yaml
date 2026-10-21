@@ -1,0 +1,1172 @@
+- id: ISO-5.1
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Policies for information security
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - policy-library
+- id: ISO-5.2
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Information security roles and responsibilities
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - policy-library
+- id: ISO-5.3
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Segregation of duties
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - policy-guard
+  - rbac-auth
+- id: ISO-5.4
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Management responsibilities
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-5.5
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Contact with authorities
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-5.6
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Contact with special interest groups
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-5.7
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Threat intelligence
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - threat-intelligence
+- id: ISO-5.8
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Information security in project management
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-5.9
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Inventory of information and other associated assets
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - asset-inventory
+- id: ISO-5.10
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Acceptable use of information and other associated assets
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-5.11
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Return of assets
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-5.12
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Classification of information
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - asset-inventory
+- id: ISO-5.13
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Labelling of information
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-5.14
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Information transfer
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-5.15
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Access control
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - rbac-auth
+- id: ISO-5.16
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Identity management
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - rbac-auth
+- id: ISO-5.17
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Authentication information
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - rbac-auth
+- id: ISO-5.18
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Access rights
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - rbac-auth
+- id: ISO-5.19
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Information security in supplier relationships
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-5.20
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Addressing information security within supplier agreements
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-5.21
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Managing information security in the ICT supply chain
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-5.22
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Monitoring, review and change management of supplier services
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-5.23
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Information security for use of cloud services
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-5.24
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Information security incident management planning and preparation
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - case-management
+  - playbook-engine
+  - notification-engine
+- id: ISO-5.25
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Assessment and decision on information security events
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - ai-agent
+  - detector
+- id: ISO-5.26
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Response to information security incidents
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - playbook-engine
+  - executor
+  - haproxy-connector
+- id: ISO-5.27
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Learning from information security incidents
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - case-management
+  - tuning-agent
+- id: ISO-5.28
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Collection of evidence
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - evidence-collector
+  - audit-log
+- id: ISO-5.29
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Information security during disruption
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - backup-restore
+- id: ISO-5.30
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: ICT readiness for business continuity
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - backup-restore
+- id: ISO-5.31
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Legal, statutory, regulatory and contractual requirements
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-5.32
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Intellectual property rights
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-5.33
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Protection of records
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-5.34
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Privacy and protection of PII
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-5.35
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Independent review of information security
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - evidence-collector
+  - audit-log
+- id: ISO-5.36
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Compliance with policies, rules and standards for information security
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - compliance-center
+  - policy-library
+- id: ISO-5.37
+  framework: ISO27001_2022
+  function: Organizational
+  category: Organizational controls
+  category_id: ISO-5
+  title: Documented operating procedures
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - playbook-engine
+- id: ISO-6.1
+  framework: ISO27001_2022
+  function: People
+  category: People controls
+  category_id: ISO-6
+  title: Screening
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-6.2
+  framework: ISO27001_2022
+  function: People
+  category: People controls
+  category_id: ISO-6
+  title: Terms and conditions of employment
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-6.3
+  framework: ISO27001_2022
+  function: People
+  category: People controls
+  category_id: ISO-6
+  title: Information security awareness, education and training
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-6.4
+  framework: ISO27001_2022
+  function: People
+  category: People controls
+  category_id: ISO-6
+  title: Disciplinary process
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-6.5
+  framework: ISO27001_2022
+  function: People
+  category: People controls
+  category_id: ISO-6
+  title: Responsibilities after termination or change of employment
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-6.6
+  framework: ISO27001_2022
+  function: People
+  category: People controls
+  category_id: ISO-6
+  title: Confidentiality or non-disclosure agreements
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-6.7
+  framework: ISO27001_2022
+  function: People
+  category: People controls
+  category_id: ISO-6
+  title: Remote working
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-6.8
+  framework: ISO27001_2022
+  function: People
+  category: People controls
+  category_id: ISO-6
+  title: Information security event reporting
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - notification-engine
+- id: ISO-7.1
+  framework: ISO27001_2022
+  function: Physical
+  category: Physical controls
+  category_id: ISO-7
+  title: Physical security perimeters
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-7.2
+  framework: ISO27001_2022
+  function: Physical
+  category: Physical controls
+  category_id: ISO-7
+  title: Physical entry
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-7.3
+  framework: ISO27001_2022
+  function: Physical
+  category: Physical controls
+  category_id: ISO-7
+  title: Securing offices, rooms and facilities
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-7.4
+  framework: ISO27001_2022
+  function: Physical
+  category: Physical controls
+  category_id: ISO-7
+  title: Physical security monitoring
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-7.5
+  framework: ISO27001_2022
+  function: Physical
+  category: Physical controls
+  category_id: ISO-7
+  title: Protecting against physical and environmental threats
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-7.6
+  framework: ISO27001_2022
+  function: Physical
+  category: Physical controls
+  category_id: ISO-7
+  title: Working in secure areas
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-7.7
+  framework: ISO27001_2022
+  function: Physical
+  category: Physical controls
+  category_id: ISO-7
+  title: Clear desk and clear screen
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-7.8
+  framework: ISO27001_2022
+  function: Physical
+  category: Physical controls
+  category_id: ISO-7
+  title: Equipment siting and protection
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-7.9
+  framework: ISO27001_2022
+  function: Physical
+  category: Physical controls
+  category_id: ISO-7
+  title: Security of assets off-premises
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-7.10
+  framework: ISO27001_2022
+  function: Physical
+  category: Physical controls
+  category_id: ISO-7
+  title: Storage media
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-7.11
+  framework: ISO27001_2022
+  function: Physical
+  category: Physical controls
+  category_id: ISO-7
+  title: Supporting utilities
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-7.12
+  framework: ISO27001_2022
+  function: Physical
+  category: Physical controls
+  category_id: ISO-7
+  title: Cabling security
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-7.13
+  framework: ISO27001_2022
+  function: Physical
+  category: Physical controls
+  category_id: ISO-7
+  title: Equipment maintenance
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-7.14
+  framework: ISO27001_2022
+  function: Physical
+  category: Physical controls
+  category_id: ISO-7
+  title: Secure disposal or re-use of equipment
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-8.1
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: User endpoint devices
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-8.2
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Privileged access rights
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - rbac-auth
+- id: ISO-8.3
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Information access restriction
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - rbac-auth
+- id: ISO-8.4
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Access to source code
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-8.5
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Secure authentication
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - rbac-auth
+- id: ISO-8.6
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Capacity management
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - health-checks
+- id: ISO-8.7
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Protection against malware
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - rule-engine
+  - playbook-engine
+- id: ISO-8.8
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Management of technical vulnerabilities
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - pentest-module
+  - remediation-tracker
+- id: ISO-8.9
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Configuration management
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - website-mode-b
+- id: ISO-8.10
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Information deletion
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-8.11
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Data masking
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - data-masking
+- id: ISO-8.12
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Data leakage prevention
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - data-masking
+- id: ISO-8.13
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Information backup
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - backup-restore
+- id: ISO-8.14
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Redundancy of information processing facilities
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - graceful-degradation
+- id: ISO-8.15
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Logging
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - audit-log
+  - log-shipper
+- id: ISO-8.16
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Monitoring activities
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - detector
+  - ml-service
+  - rule-engine
+  - correlation-engine
+- id: ISO-8.17
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Clock synchronization
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-8.18
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Use of privileged utility programs
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-8.19
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Installation of software on operational systems
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-8.20
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Networks security
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - haproxy-connector
+- id: ISO-8.21
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Security of network services
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-8.22
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Segregation of networks
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-8.23
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Web filtering
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-8.24
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Use of cryptography
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - website-mode-b
+- id: ISO-8.25
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Secure development life cycle
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-8.26
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Application security requirements
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - website-mode-b
+- id: ISO-8.27
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Secure system architecture and engineering principles
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-8.28
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Secure coding
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - website-mode-b
+- id: ISO-8.29
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Security testing in development and acceptance
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - pentest-module
+- id: ISO-8.30
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Outsourced development
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-8.31
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Separation of development, test and production environments
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-8.32
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Change management
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-8.33
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Test information
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: []
+- id: ISO-8.34
+  framework: ISO27001_2022
+  function: Technological
+  category: Technological controls
+  category_id: ISO-8
+  title: Protection of information systems during audit testing
+  description: (Title only. See ISO/IEC 27001:2022 Annex A for the official control text.)
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features:
+  - pentest-module

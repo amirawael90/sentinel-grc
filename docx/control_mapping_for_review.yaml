@@ -1,0 +1,106 @@
+NIST_CSF_2.0_by_category:
+  DE.AE:
+  - detector
+  - ml-service
+  - rule-engine
+  - correlation-engine
+  - mitre-attack
+  DE.CM:
+  - sniffer
+  - log-shipper
+  - detector
+  - pipeline-health
+  GV.OC: []
+  GV.OV:
+  - compliance-center
+  - kri-dashboard
+  - report-generator
+  GV.PO:
+  - policy-library
+  GV.RM:
+  - risk-register
+  - kri-dashboard
+  GV.RR:
+  - rbac-auth
+  - policy-library
+  GV.SC: []
+  ID.AM:
+  - asset-inventory
+  ID.IM:
+  - tuning-agent
+  - remediation-tracker
+  - case-management
+  ID.RA:
+  - pentest-module
+  - risk-register
+  - threat-intelligence
+  PR.AA:
+  - rbac-auth
+  - website-hooks
+  PR.AT: []
+  PR.DS:
+  - data-masking
+  - backup-restore
+  PR.IR:
+  - backup-restore
+  - graceful-degradation
+  - health-checks
+  PR.PS:
+  - website-mode-b
+  - pentest-module
+  RC.CO:
+  - notification-engine
+  RC.RP:
+  - backup-restore
+  - case-management
+  RS.AN:
+  - ai-agent
+  - enrichment-service
+  - case-management
+  RS.CO:
+  - notification-engine
+  - report-generator
+  RS.MA:
+  - case-management
+  - playbook-engine
+  - ai-agent
+  RS.MI:
+  - executor
+  - haproxy-connector
+  - policy-guard
+OWASP_TOP10_2025:
+  A01:
+  - rbac-auth
+  - pentest-module
+  A02:
+  - pentest-module
+  - website-mode-b
+  A03: []
+  A04:
+  - website-mode-b
+  - data-masking
+  A05:
+  - rule-engine
+  - haproxy-connector
+  - pentest-module
+  - website-mode-b
+  A06:
+  - website-mode-b
+  - policy-guard
+  A07:
+  - rbac-auth
+  - rule-engine
+  - playbook-engine
+  - pentest-module
+  A08:
+  - rule-engine
+  - playbook-engine
+  - pentest-module
+  A09:
+  - log-shipper
+  - audit-log
+  - detector
+  A10:
+  - graceful-degradation
+  - website-mode-b
+  - pentest-module
