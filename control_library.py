@@ -23,6 +23,7 @@ class Control(BaseModel):
     description: str
     asset_class: Optional[str] = None
     implementation_groups: list[str] = []
+    weight: float = Field(default=1.0, gt=0)
     owner: str = "TBD"
     status: Literal["Implemented", "Partial", "Not implemented", "Not applicable"]
     maturity: int = Field(ge=0, le=5)

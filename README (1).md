@@ -9,3 +9,9 @@
 - `platform_features` mapping is by category and still needs team review.
 - CIS Controls v8.1.2 (March 2025), 153 safeguards: text copied unchanged from the official CIS workbook (CC BY-NC-ND 4.0, cite "CIS Controls v8.1, Center for Internet Security").
 - ISO/IEC 27001:2022 Annex A, 93 controls: titles only (official text is paid). Titles must be verified against the standard before the final report.
+
+## Z3 Automatic evidence collector
+- `evidence.py`: hashes (SHA-256) the files listed in `data/evidence_sources.yaml`, stores timestamps, source and linked controls in `data/evidence/evidence.json`.
+- Stale detection: evidence older than the source's `max_age_days` is "stale"; controls show fresh / stale / no_evidence counts.
+- `python evidence.py` collects; `python evidence.py --verify` re-hashes every file to detect tampering.
+- `sample_sources/` is SAMPLE data. Point `data/evidence_sources.yaml` at the real outputs of the rule engine, HAProxy, audit stream, executor and pentest module.

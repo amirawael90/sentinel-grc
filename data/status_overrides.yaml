@@ -1,0 +1,4 @@
+# Manual decisions that beat the automatic calculation.
+# Format:  CONTROL-ID: Implemented | Partial | Not implemented | Not applicable
+# Example: ISO-7.1: Not applicable
+{}

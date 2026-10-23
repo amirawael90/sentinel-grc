@@ -1,0 +1,28 @@
+# Where evidence comes from and which controls each source supports.
+# path is relative to the grc folder. max_age_days: older evidence is "stale".
+sources:
+  - name: detection-rules
+    path: sample_sources/rules
+    pattern: "*.yaml"
+    max_age_days: 30
+    controls: [ISO-8.16, NIST-DE.AE-02, NIST-DE.CM-01, CIS-13.1]
+  - name: config-snapshots
+    path: sample_sources/config
+    pattern: "*"
+    max_age_days: 30
+    controls: [ISO-8.9, NIST-PR.PS-01, CIS-4.1]
+  - name: audit-logs
+    path: sample_sources/audit
+    pattern: "*.jsonl"
+    max_age_days: 7
+    controls: [ISO-8.15, NIST-PR.PS-04, CIS-8.2, CIS-8.5, OWASP-A09-2025]
+  - name: executed-actions
+    path: sample_sources/actions
+    pattern: "*.jsonl"
+    max_age_days: 7
+    controls: [ISO-5.26, NIST-RS.MI-02, CIS-17.4]
+  - name: scan-reports
+    path: sample_sources/scans
+    pattern: "*.json"
+    max_age_days: 90
+    controls: [ISO-8.8, NIST-ID.RA-01, CIS-7.6, CIS-18.2]
