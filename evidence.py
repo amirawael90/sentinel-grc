@@ -69,7 +69,11 @@ def collect(sources: list[dict], store: dict[str, Evidence], base: Path = BASE,
     """Hash every file of every source. Unchanged content is refreshed; changed content is a new item."""
     now = now or datetime.now(timezone.utc)
     for s in sources:
-        for file in sorted((base / s["path"]).glob(s.get("pattern", "*"))):
+        folder = base / s["path"]
+        if not folder.is_dir():
+            print(f"WARNING: folder not found for source '{s['name']}': {folder}")
+            continue
+        for file in sorted(folder.glob(s.get("pattern", "*"))):
             if not file.is_file():
                 continue
             digest = sha256_of(file)
