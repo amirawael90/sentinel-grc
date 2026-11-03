@@ -1,0 +1,14 @@
+# Who gets told what (Z6). Channels: telegram | email | webhook
+# First rule whose min_severity the event reaches (checked from the top) decides the channels.
+rules:
+  - {min_severity: critical, channels: [telegram, email, webhook], needs_ack: true}
+  - {min_severity: high,     channels: [telegram, email],          needs_ack: true}
+  - {min_severity: medium,   channels: [telegram],                 needs_ack: false}
+  - {min_severity: low,      channels: [],                         needs_ack: false}   # dashboard only
+asset_overrides:             # extra channels whenever this asset is involved
+  skyline-db: [email]
+dedup_window_seconds: 300    # same incident + action + target + channel inside this window = one message
+retries: 3                   # attempts per channel (waits 1s, 2s, 4s between)
+escalation:
+  after_minutes: 15          # not acknowledged after this long -> next channel in the chain
+  chain: [email, webhook]    # one more channel every `after_minutes`

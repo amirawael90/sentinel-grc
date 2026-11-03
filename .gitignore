@@ -1,3 +1,32 @@
+# Python
 __pycache__/
+*.py[cod]
 .pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Secrets - NEVER commit
 .env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials*.json
+
+# Files generated when the code runs
+data/remediation/tasks.json
+data/evidence/evidence.json
+data/notifications/deliveries.jsonl
+data/snapshots/
+
+# Licensed source files (keep out of the repo)
+CIS_Controls*.xlsx
+
+# Editor / OS
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+.DS_Store

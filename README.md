@@ -36,3 +36,10 @@
 - Input contract (Finding record, Omar): id, title, endpoint, cwe, severity, status, evidence, optional asset. Today it reads `data/mock/findings.json` (SAMPLE); replace `load_findings()` with the real source.
 - Rules (due days, default owner) are in `data/remediation_config.yaml`.
 - Run: `python remediation.py --reset`, then `python remediation.py --retest data/mock/retest.json`
+
+## Z6 Notification engine
+- `notifications.py`: turns an executed action into a message with WHAT was done, WHY and HOW TO UNDO; sends it via Telegram / email / webhook; routing by severity and asset (`data/notification_rules.yaml`); de-duplication window; retries with backoff; delivery log (`data/notifications/deliveries.jsonl`); escalation of unacknowledged critical/high incidents through a channel chain.
+- Input follows Mohamed's action contract (ActionRequest + ActionResult) plus the agent's decision; `event_from_contract()` merges them (tested against his real models).
+- Secrets only from environment variables: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `SMTP_HOST/PORT/USER/PASSWORD/FROM/TO`, `WEBHOOK_URL`. A channel without settings runs in DRY-RUN mode (logged as `dry_run`, nothing sent).
+- Not built (optional in the plan): Telegram chat commands.
+- Run: `python notifications.py` (sample critical event, sent twice to show de-duplication).
