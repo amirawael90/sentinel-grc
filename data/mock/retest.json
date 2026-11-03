@@ -1,0 +1,6 @@
+[
+  {"id": "F-001", "title": "SQL injection in product search", "endpoint": "/search", "cwe": "CWE-89", "severity": "critical", "status": "fixed", "evidence": "SAMPLE: parameterised query", "asset": "skyline-web"},
+  {"id": "F-002", "title": "Stored XSS in comments", "endpoint": "/comments", "cwe": "CWE-79", "severity": "high", "status": "fixed", "evidence": "SAMPLE: output escaped", "asset": "skyline-web"},
+  {"id": "F-004", "title": "Unrestricted file upload", "endpoint": "/upload", "cwe": "CWE-434", "severity": "high", "status": "remaining", "evidence": "SAMPLE: still accepts .phtml", "asset": "skyline-web"},
+  {"id": "F-007", "title": "Missing CSRF token on password change", "endpoint": "/account/password", "cwe": "CWE-352", "severity": "medium", "status": "new", "evidence": "SAMPLE: found during retest", "asset": "skyline-web"}
+]

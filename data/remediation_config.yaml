@@ -1,0 +1,9 @@
+# Remediation rules (our assumptions, edit freely).
+due_days:            # days from creation to due date, by severity
+  critical: 7
+  high: 14
+  medium: 30
+  low: 60
+control_gap_due_days: 90
+default_owner: TBD
+top_gaps: 10         # how many of the biggest compliance gaps become tasks
