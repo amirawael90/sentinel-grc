@@ -1,0 +1,27 @@
+{
+  "sample": true,
+  "client": "Skyline",
+  "incidents": {"total": 14, "by_severity": {"critical": 2, "high": 4, "medium": 5, "low": 3},
+                "autonomous_pct": 71.4, "mttd_seconds": 6, "mttr_minutes": 9},
+  "incident_list": [
+    {"id": "INC-42", "severity": "critical", "type": "Brute force", "status": "Contained", "action": "block_ip 203.0.113.7 (60 min)"},
+    {"id": "INC-41", "severity": "critical", "type": "SQL injection", "status": "Contained", "action": "block_ip + WAF rule"},
+    {"id": "INC-39", "severity": "high", "type": "HTTP flood", "status": "Contained", "action": "rate_limit then block_ip"},
+    {"id": "INC-37", "severity": "high", "type": "Port scan", "status": "Resolved", "action": "tarpit_ip"},
+    {"id": "INC-36", "severity": "medium", "type": "Heavy legitimate use", "status": "False positive", "action": "none (no block)"}
+  ],
+  "actions": [
+    {"tool": "block_ip", "target": "203.0.113.7", "gate": "G2", "status": "success", "verified": true},
+    {"tool": "add_waf_rule", "target": "/search", "gate": "G2", "status": "success", "verified": true},
+    {"tool": "rate_limit_ip", "target": "198.51.100.20", "gate": "G1", "status": "success", "verified": true},
+    {"tool": "tarpit_ip", "target": "198.51.100.44", "gate": "G1", "status": "success", "verified": false}
+  ],
+  "top_risks": [
+    {"id": "R-001", "title": "SQL injection on the public web application", "asset": "skyline-web", "score": 20, "band": "Critical"},
+    {"id": "R-002", "title": "Weak password storage", "asset": "skyline-web", "score": 16, "band": "High"},
+    {"id": "R-003", "title": "Unrestricted file upload", "asset": "skyline-web", "score": 12, "band": "High"},
+    {"id": "R-004", "title": "No protection against request floods", "asset": "haproxy", "score": 8, "band": "Medium"},
+    {"id": "R-005", "title": "Verbose error messages", "asset": "skyline-web", "score": 4, "band": "Low"}
+  ],
+  "attack_coverage_pct": 38
+}

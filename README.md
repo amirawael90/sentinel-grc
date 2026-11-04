@@ -43,3 +43,10 @@
 - Secrets only from environment variables: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `SMTP_HOST/PORT/USER/PASSWORD/FROM/TO`, `WEBHOOK_URL`. A channel without settings runs in DRY-RUN mode (logged as `dry_run`, nothing sent).
 - Not built (optional in the plan): Telegram chat commands.
 - Run: `python notifications.py` (sample critical event, sent twice to show de-duplication).
+
+## Z7 Report generator
+- `reports.py`: one command builds both PDFs (`python reports.py [--days 7] [--out reports]`): executive report (1 page here, max 2) and technical report; every run is added to `reports/history.json`.
+- Computed from live files: compliance (Z2), evidence (Z3), policies (Z4), remediation (Z5), findings (Finding contract). Read from `data/mock/ops_stats.json` (SAMPLE, flagged inside the PDFs): incidents, actions, top risks. Replace `load_ops_stats()` with the real sources.
+- "Decisions needed" is derived from the data (overdue tasks, tasks without owner, open critical findings, Draft policies, low compliance).
+- Weekly: schedule the same command, e.g. Windows Task Scheduler: `schtasks /Create /SC WEEKLY /D MON /ST 08:00 /TN SentinelReports /TR "python C:\path\to\grc\reports.py"`.
+- Install: `pip install -r requirements.txt`
