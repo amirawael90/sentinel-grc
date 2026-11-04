@@ -1,0 +1,37 @@
+# Build state of each platform feature: planned | in_progress | built
+# Update this file as teammates finish their components. Compliance % is calculated from it.
+ai-agent: planned
+asset-inventory: planned
+audit-log: planned
+backup-restore: planned
+case-management: planned
+compliance-center: planned
+correlation-engine: planned
+data-masking: planned
+detector: planned
+enrichment-service: planned
+evidence-collector: planned
+executor: planned
+graceful-degradation: planned
+haproxy-connector: planned
+health-checks: planned
+kri-dashboard: planned
+log-shipper: planned
+mitre-attack: planned
+ml-service: planned
+notification-engine: planned
+pentest-module: planned
+pipeline-health: planned
+playbook-engine: planned
+policy-guard: planned
+policy-library: planned
+rbac-auth: planned
+remediation-tracker: planned
+report-generator: planned
+risk-register: planned
+rule-engine: planned
+sniffer: planned
+threat-intelligence: planned
+tuning-agent: planned
+website-hooks: planned
+website-mode-b: planned

@@ -1,0 +1,51 @@
+# Policy library (Z4). Only APPROVED policies change playbook behaviour.
+policies:
+  - id: POL-001
+    title: Brute-force sources are blocked after repeated attempts
+    version: "1.0"
+    owner: TBD
+    approval_status: Approved      # Draft | Approved | Retired
+    approved_by: Project team
+    approved_on: 2026-10-26
+    review_date: 2027-04-26
+    acknowledgements: []
+    drives:
+      - playbook: web_bruteforce_response
+        parameter: bruteforce_block_ttl_minutes
+        value: 1440                # 24 hours
+    linked_controls: [ISO-5.1, ISO-5.26, CIS-17.4]
+  - id: POL-002
+    title: Request floods are rate-limited before any block
+    version: "1.0"
+    owner: TBD
+    approval_status: Approved
+    approved_by: Project team
+    approved_on: 2026-10-26
+    review_date: 2027-04-26
+    acknowledgements: []
+    drives:
+      - playbook: dos_flood_response
+        parameter: dos_rate_limit
+        value: 10r/s
+    linked_controls: [ISO-5.1, ISO-5.26]
+  - id: POL-003
+    title: Administrator and infrastructure addresses are never blocked
+    version: "1.0"
+    owner: TBD
+    approval_status: Approved
+    approved_by: Project team
+    approved_on: 2026-10-26
+    review_date: 2027-04-26
+    acknowledgements: []
+    drives: []                     # enforced by the Policy Guard allowlist (code)
+    linked_controls: [ISO-5.1, ISO-5.3]
+# Exceptions override one parameter until they expire (needs an approver).
+exceptions: []
+# Example:
+#  - id: EXC-001
+#    policy_id: POL-001
+#    parameter: bruteforce_block_ttl_minutes
+#    value: 60
+#    reason: Pentest window
+#    approver: Name
+#    expires_on: 2026-12-01

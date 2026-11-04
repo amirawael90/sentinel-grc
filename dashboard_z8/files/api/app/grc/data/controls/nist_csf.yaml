@@ -1,0 +1,1263 @@
+- id: NIST-DE.AE-02
+  framework: NIST_CSF_2.0
+  function: DETECT
+  category: Adverse Event Analysis
+  category_id: DE.AE
+  description: Potentially adverse events are analyzed to better understand associated activities
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: &id001
+  - detector
+  - ml-service
+  - rule-engine
+  - correlation-engine
+  - mitre-attack
+- id: NIST-DE.AE-03
+  framework: NIST_CSF_2.0
+  function: DETECT
+  category: Adverse Event Analysis
+  category_id: DE.AE
+  description: Information is correlated from multiple sources
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id001
+- id: NIST-DE.AE-04
+  framework: NIST_CSF_2.0
+  function: DETECT
+  category: Adverse Event Analysis
+  category_id: DE.AE
+  description: The estimated impact and scope of adverse events are understood
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id001
+- id: NIST-DE.AE-06
+  framework: NIST_CSF_2.0
+  function: DETECT
+  category: Adverse Event Analysis
+  category_id: DE.AE
+  description: Information on adverse events is provided to authorized staff and tools
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id001
+- id: NIST-DE.AE-07
+  framework: NIST_CSF_2.0
+  function: DETECT
+  category: Adverse Event Analysis
+  category_id: DE.AE
+  description: Cyber threat intelligence and other contextual information are integrated into the analysis
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id001
+- id: NIST-DE.AE-08
+  framework: NIST_CSF_2.0
+  function: DETECT
+  category: Adverse Event Analysis
+  category_id: DE.AE
+  description: Incidents are declared when adverse events meet the defined incident criteria
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id001
+- id: NIST-DE.CM-01
+  framework: NIST_CSF_2.0
+  function: DETECT
+  category: Continuous Monitoring
+  category_id: DE.CM
+  description: Networks and network services are monitored to find potentially adverse events
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: &id002
+  - sniffer
+  - log-shipper
+  - detector
+  - pipeline-health
+- id: NIST-DE.CM-02
+  framework: NIST_CSF_2.0
+  function: DETECT
+  category: Continuous Monitoring
+  category_id: DE.CM
+  description: The physical environment is monitored to find potentially adverse events
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id002
+- id: NIST-DE.CM-03
+  framework: NIST_CSF_2.0
+  function: DETECT
+  category: Continuous Monitoring
+  category_id: DE.CM
+  description: Personnel activity and technology usage are monitored to find potentially adverse events
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id002
+- id: NIST-DE.CM-06
+  framework: NIST_CSF_2.0
+  function: DETECT
+  category: Continuous Monitoring
+  category_id: DE.CM
+  description: External service provider activities and services are monitored to find potentially adverse
+    events
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id002
+- id: NIST-DE.CM-09
+  framework: NIST_CSF_2.0
+  function: DETECT
+  category: Continuous Monitoring
+  category_id: DE.CM
+  description: Computing hardware and software, runtime environments, and their data are monitored to
+    find potentially adverse events
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id002
+- id: NIST-GV.OC-01
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Organizational Context
+  category_id: GV.OC
+  description: The organizational mission is understood and informs cybersecurity risk management
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: &id003 []
+- id: NIST-GV.OC-02
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Organizational Context
+  category_id: GV.OC
+  description: Internal and external stakeholders are understood, and their needs and expectations regarding
+    cybersecurity risk management are understood and considered
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id003
+- id: NIST-GV.OC-03
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Organizational Context
+  category_id: GV.OC
+  description: Legal, regulatory, and contractual requirements regarding cybersecurity - including privacy
+    and civil liberties obligations - are understood and managed
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id003
+- id: NIST-GV.OC-04
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Organizational Context
+  category_id: GV.OC
+  description: Critical objectives, capabilities, and services that external stakeholders depend on or
+    expect from the organization are understood and communicated
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id003
+- id: NIST-GV.OC-05
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Organizational Context
+  category_id: GV.OC
+  description: Outcomes, capabilities, and services that the organization depends on are understood and
+    communicated
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id003
+- id: NIST-GV.OV-01
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Oversight
+  category_id: GV.OV
+  description: Cybersecurity risk management strategy outcomes are reviewed to inform and adjust strategy
+    and direction
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: &id004
+  - compliance-center
+  - kri-dashboard
+  - report-generator
+- id: NIST-GV.OV-02
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Oversight
+  category_id: GV.OV
+  description: The cybersecurity risk management strategy is reviewed and adjusted to ensure coverage
+    of organizational requirements and risks
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id004
+- id: NIST-GV.OV-03
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Oversight
+  category_id: GV.OV
+  description: Organizational cybersecurity risk management performance is evaluated and reviewed for
+    adjustments needed
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id004
+- id: NIST-GV.PO-01
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Policy
+  category_id: GV.PO
+  description: Policy for managing cybersecurity risks is established based on organizational context,
+    cybersecurity strategy, and priorities and is communicated and enforced
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: &id005
+  - policy-library
+- id: NIST-GV.PO-02
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Policy
+  category_id: GV.PO
+  description: Policy for managing cybersecurity risks is reviewed, updated, communicated, and enforced
+    to reflect changes in requirements, threats, technology, and organizational mission
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id005
+- id: NIST-GV.RM-01
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Risk Management Strategy
+  category_id: GV.RM
+  description: Risk management objectives are established and agreed to by organizational stakeholders
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: &id006
+  - risk-register
+  - kri-dashboard
+- id: NIST-GV.RM-02
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Risk Management Strategy
+  category_id: GV.RM
+  description: Risk appetite and risk tolerance statements are established, communicated, and maintained
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id006
+- id: NIST-GV.RM-03
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Risk Management Strategy
+  category_id: GV.RM
+  description: Cybersecurity risk management activities and outcomes are included in enterprise risk management
+    processes
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id006
+- id: NIST-GV.RM-04
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Risk Management Strategy
+  category_id: GV.RM
+  description: Strategic direction that describes appropriate risk response options is established and
+    communicated
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id006
+- id: NIST-GV.RM-05
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Risk Management Strategy
+  category_id: GV.RM
+  description: Lines of communication across the organization are established for cybersecurity risks,
+    including risks from suppliers and other third parties
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id006
+- id: NIST-GV.RM-06
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Risk Management Strategy
+  category_id: GV.RM
+  description: A standardized method for calculating, documenting, categorizing, and prioritizing cybersecurity
+    risks is established and communicated
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id006
+- id: NIST-GV.RM-07
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Risk Management Strategy
+  category_id: GV.RM
+  description: Strategic opportunities (i.e., positive risks) are characterized and are included in organizational
+    cybersecurity risk discussions
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id006
+- id: NIST-GV.RR-01
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Roles, Responsibilities, and Authorities
+  category_id: GV.RR
+  description: Organizational leadership is responsible and accountable for cybersecurity risk and fosters
+    a culture that is risk-aware, ethical, and continually improving
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: &id007
+  - rbac-auth
+  - policy-library
+- id: NIST-GV.RR-02
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Roles, Responsibilities, and Authorities
+  category_id: GV.RR
+  description: Roles, responsibilities, and authorities related to cybersecurity risk management are established,
+    communicated, understood, and enforced
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id007
+- id: NIST-GV.RR-03
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Roles, Responsibilities, and Authorities
+  category_id: GV.RR
+  description: Adequate resources are allocated commensurate with the cybersecurity risk strategy, roles,
+    responsibilities, and policies
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id007
+- id: NIST-GV.RR-04
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Roles, Responsibilities, and Authorities
+  category_id: GV.RR
+  description: Cybersecurity is included in human resources practices
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id007
+- id: NIST-GV.SC-01
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Cybersecurity Supply Chain Risk Management
+  category_id: GV.SC
+  description: A cybersecurity supply chain risk management program, strategy, objectives, policies, and
+    processes are established and agreed to by organizational stakeholders
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: &id008 []
+- id: NIST-GV.SC-02
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Cybersecurity Supply Chain Risk Management
+  category_id: GV.SC
+  description: Cybersecurity roles and responsibilities for suppliers, customers, and partners are established,
+    communicated, and coordinated internally and externally
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id008
+- id: NIST-GV.SC-03
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Cybersecurity Supply Chain Risk Management
+  category_id: GV.SC
+  description: Cybersecurity supply chain risk management is integrated into cybersecurity and enterprise
+    risk management, risk assessment, and improvement processes
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id008
+- id: NIST-GV.SC-04
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Cybersecurity Supply Chain Risk Management
+  category_id: GV.SC
+  description: Suppliers are known and prioritized by criticality
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id008
+- id: NIST-GV.SC-05
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Cybersecurity Supply Chain Risk Management
+  category_id: GV.SC
+  description: Requirements to address cybersecurity risks in supply chains are established, prioritized,
+    and integrated into contracts and other types of agreements with suppliers and other relevant third
+    parties
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id008
+- id: NIST-GV.SC-06
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Cybersecurity Supply Chain Risk Management
+  category_id: GV.SC
+  description: Planning and due diligence are performed to reduce risks before entering into formal supplier
+    or other third-party relationships
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id008
+- id: NIST-GV.SC-07
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Cybersecurity Supply Chain Risk Management
+  category_id: GV.SC
+  description: The risks posed by a supplier, their products and services, and other third parties are
+    understood, recorded, prioritized, assessed, responded to, and monitored over the course of the relationship
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id008
+- id: NIST-GV.SC-08
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Cybersecurity Supply Chain Risk Management
+  category_id: GV.SC
+  description: Relevant suppliers and other third parties are included in incident planning, response,
+    and recovery activities
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id008
+- id: NIST-GV.SC-09
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Cybersecurity Supply Chain Risk Management
+  category_id: GV.SC
+  description: Supply chain security practices are integrated into cybersecurity and enterprise risk management
+    programs, and their performance is monitored throughout the technology product and service life cycle
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id008
+- id: NIST-GV.SC-10
+  framework: NIST_CSF_2.0
+  function: GOVERN
+  category: Cybersecurity Supply Chain Risk Management
+  category_id: GV.SC
+  description: Cybersecurity supply chain risk management plans include provisions for activities that
+    occur after the conclusion of a partnership or service agreement
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id008
+- id: NIST-ID.AM-01
+  framework: NIST_CSF_2.0
+  function: IDENTIFY
+  category: Asset Management
+  category_id: ID.AM
+  description: Inventories of hardware managed by the organization are maintained
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: &id009
+  - asset-inventory
+- id: NIST-ID.AM-02
+  framework: NIST_CSF_2.0
+  function: IDENTIFY
+  category: Asset Management
+  category_id: ID.AM
+  description: Inventories of software, services, and systems managed by the organization are maintained
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id009
+- id: NIST-ID.AM-03
+  framework: NIST_CSF_2.0
+  function: IDENTIFY
+  category: Asset Management
+  category_id: ID.AM
+  description: Representations of the organization's authorized network communication and internal and
+    external network data flows are maintained
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id009
+- id: NIST-ID.AM-04
+  framework: NIST_CSF_2.0
+  function: IDENTIFY
+  category: Asset Management
+  category_id: ID.AM
+  description: Inventories of services provided by suppliers are maintained
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id009
+- id: NIST-ID.AM-05
+  framework: NIST_CSF_2.0
+  function: IDENTIFY
+  category: Asset Management
+  category_id: ID.AM
+  description: Assets are prioritized based on classification, criticality, resources, and impact on the
+    mission
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id009
+- id: NIST-ID.AM-07
+  framework: NIST_CSF_2.0
+  function: IDENTIFY
+  category: Asset Management
+  category_id: ID.AM
+  description: Inventories of data and corresponding metadata for designated data types are maintained
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id009
+- id: NIST-ID.AM-08
+  framework: NIST_CSF_2.0
+  function: IDENTIFY
+  category: Asset Management
+  category_id: ID.AM
+  description: Systems, hardware, software, services, and data are managed throughout their life cycles
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id009
+- id: NIST-ID.IM-01
+  framework: NIST_CSF_2.0
+  function: IDENTIFY
+  category: Improvement
+  category_id: ID.IM
+  description: Improvements are identified from evaluations
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: &id010
+  - tuning-agent
+  - remediation-tracker
+  - case-management
+- id: NIST-ID.IM-02
+  framework: NIST_CSF_2.0
+  function: IDENTIFY
+  category: Improvement
+  category_id: ID.IM
+  description: Improvements are identified from security tests and exercises, including those done in
+    coordination with suppliers and relevant third parties
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id010
+- id: NIST-ID.IM-03
+  framework: NIST_CSF_2.0
+  function: IDENTIFY
+  category: Improvement
+  category_id: ID.IM
+  description: Improvements are identified from execution of operational processes, procedures, and activities
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id010
+- id: NIST-ID.IM-04
+  framework: NIST_CSF_2.0
+  function: IDENTIFY
+  category: Improvement
+  category_id: ID.IM
+  description: Incident response plans and other cybersecurity plans that affect operations are established,
+    communicated, maintained, and improved
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id010
+- id: NIST-ID.RA-01
+  framework: NIST_CSF_2.0
+  function: IDENTIFY
+  category: Risk Assessment
+  category_id: ID.RA
+  description: Vulnerabilities in assets are identified, validated, and recorded
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: &id011
+  - pentest-module
+  - risk-register
+  - threat-intelligence
+- id: NIST-ID.RA-02
+  framework: NIST_CSF_2.0
+  function: IDENTIFY
+  category: Risk Assessment
+  category_id: ID.RA
+  description: Cyber threat intelligence is received from information sharing forums and sources
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id011
+- id: NIST-ID.RA-03
+  framework: NIST_CSF_2.0
+  function: IDENTIFY
+  category: Risk Assessment
+  category_id: ID.RA
+  description: Internal and external threats to the organization are identified and recorded
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id011
+- id: NIST-ID.RA-04
+  framework: NIST_CSF_2.0
+  function: IDENTIFY
+  category: Risk Assessment
+  category_id: ID.RA
+  description: Potential impacts and likelihoods of threats exploiting vulnerabilities are identified
+    and recorded
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id011
+- id: NIST-ID.RA-05
+  framework: NIST_CSF_2.0
+  function: IDENTIFY
+  category: Risk Assessment
+  category_id: ID.RA
+  description: Threats, vulnerabilities, likelihoods, and impacts are used to understand inherent risk
+    and inform risk response prioritization
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id011
+- id: NIST-ID.RA-06
+  framework: NIST_CSF_2.0
+  function: IDENTIFY
+  category: Risk Assessment
+  category_id: ID.RA
+  description: Risk responses are chosen, prioritized, planned, tracked, and communicated
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id011
+- id: NIST-ID.RA-07
+  framework: NIST_CSF_2.0
+  function: IDENTIFY
+  category: Risk Assessment
+  category_id: ID.RA
+  description: Changes and exceptions are managed, assessed for risk impact, recorded, and tracked
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id011
+- id: NIST-ID.RA-08
+  framework: NIST_CSF_2.0
+  function: IDENTIFY
+  category: Risk Assessment
+  category_id: ID.RA
+  description: Processes for receiving, analyzing, and responding to vulnerability disclosures are established
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id011
+- id: NIST-ID.RA-09
+  framework: NIST_CSF_2.0
+  function: IDENTIFY
+  category: Risk Assessment
+  category_id: ID.RA
+  description: The authenticity and integrity of hardware and software are assessed prior to acquisition
+    and use
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id011
+- id: NIST-ID.RA-10
+  framework: NIST_CSF_2.0
+  function: IDENTIFY
+  category: Risk Assessment
+  category_id: ID.RA
+  description: Critical suppliers are assessed prior to acquisition
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id011
+- id: NIST-PR.AA-01
+  framework: NIST_CSF_2.0
+  function: PROTECT
+  category: Identity Management, Authentication, and Access Control
+  category_id: PR.AA
+  description: Identities and credentials for authorized users, services, and hardware are managed by
+    the organization
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: &id012
+  - rbac-auth
+  - website-hooks
+- id: NIST-PR.AA-02
+  framework: NIST_CSF_2.0
+  function: PROTECT
+  category: Identity Management, Authentication, and Access Control
+  category_id: PR.AA
+  description: Identities are proofed and bound to credentials based on the context of interactions
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id012
+- id: NIST-PR.AA-03
+  framework: NIST_CSF_2.0
+  function: PROTECT
+  category: Identity Management, Authentication, and Access Control
+  category_id: PR.AA
+  description: Users, services, and hardware are authenticated
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id012
+- id: NIST-PR.AA-04
+  framework: NIST_CSF_2.0
+  function: PROTECT
+  category: Identity Management, Authentication, and Access Control
+  category_id: PR.AA
+  description: Identity assertions are protected, conveyed, and verified
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id012
+- id: NIST-PR.AA-05
+  framework: NIST_CSF_2.0
+  function: PROTECT
+  category: Identity Management, Authentication, and Access Control
+  category_id: PR.AA
+  description: Access permissions, entitlements, and authorizations are defined in a policy, managed,
+    enforced, and reviewed, and incorporate the principles of least privilege and separation of duties
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id012
+- id: NIST-PR.AA-06
+  framework: NIST_CSF_2.0
+  function: PROTECT
+  category: Identity Management, Authentication, and Access Control
+  category_id: PR.AA
+  description: Physical access to assets is managed, monitored, and enforced commensurate with risk
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id012
+- id: NIST-PR.AT-01
+  framework: NIST_CSF_2.0
+  function: PROTECT
+  category: Awareness and Training
+  category_id: PR.AT
+  description: Personnel are provided with awareness and training so that they possess the knowledge and
+    skills to perform general tasks with cybersecurity risks in mind
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: &id013 []
+- id: NIST-PR.AT-02
+  framework: NIST_CSF_2.0
+  function: PROTECT
+  category: Awareness and Training
+  category_id: PR.AT
+  description: Individuals in specialized roles are provided with awareness and training so that they
+    possess the knowledge and skills to perform relevant tasks with cybersecurity risks in mind
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id013
+- id: NIST-PR.DS-01
+  framework: NIST_CSF_2.0
+  function: PROTECT
+  category: Data Security
+  category_id: PR.DS
+  description: The confidentiality, integrity, and availability of data-at-rest are protected
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: &id014
+  - data-masking
+  - backup-restore
+- id: NIST-PR.DS-02
+  framework: NIST_CSF_2.0
+  function: PROTECT
+  category: Data Security
+  category_id: PR.DS
+  description: The confidentiality, integrity, and availability of data-in-transit are protected
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id014
+- id: NIST-PR.DS-10
+  framework: NIST_CSF_2.0
+  function: PROTECT
+  category: Data Security
+  category_id: PR.DS
+  description: The confidentiality, integrity, and availability of data-in-use are protected
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id014
+- id: NIST-PR.DS-11
+  framework: NIST_CSF_2.0
+  function: PROTECT
+  category: Data Security
+  category_id: PR.DS
+  description: Backups of data are created, protected, maintained, and tested
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id014
+- id: NIST-PR.IR-01
+  framework: NIST_CSF_2.0
+  function: PROTECT
+  category: Technology Infrastructure Resilience
+  category_id: PR.IR
+  description: Networks and environments are protected from unauthorized logical access and usage
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: &id015
+  - backup-restore
+  - graceful-degradation
+  - health-checks
+- id: NIST-PR.IR-02
+  framework: NIST_CSF_2.0
+  function: PROTECT
+  category: Technology Infrastructure Resilience
+  category_id: PR.IR
+  description: The organization's technology assets are protected from environmental threats
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id015
+- id: NIST-PR.IR-03
+  framework: NIST_CSF_2.0
+  function: PROTECT
+  category: Technology Infrastructure Resilience
+  category_id: PR.IR
+  description: Mechanisms are implemented to achieve resilience requirements in normal and adverse situations
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id015
+- id: NIST-PR.IR-04
+  framework: NIST_CSF_2.0
+  function: PROTECT
+  category: Technology Infrastructure Resilience
+  category_id: PR.IR
+  description: Adequate resource capacity to ensure availability is maintained
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id015
+- id: NIST-PR.PS-01
+  framework: NIST_CSF_2.0
+  function: PROTECT
+  category: Platform Security
+  category_id: PR.PS
+  description: Configuration management practices are established and applied
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: &id016
+  - website-mode-b
+  - pentest-module
+- id: NIST-PR.PS-02
+  framework: NIST_CSF_2.0
+  function: PROTECT
+  category: Platform Security
+  category_id: PR.PS
+  description: Software is maintained, replaced, and removed commensurate with risk
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id016
+- id: NIST-PR.PS-03
+  framework: NIST_CSF_2.0
+  function: PROTECT
+  category: Platform Security
+  category_id: PR.PS
+  description: Hardware is maintained, replaced, and removed commensurate with risk
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id016
+- id: NIST-PR.PS-04
+  framework: NIST_CSF_2.0
+  function: PROTECT
+  category: Platform Security
+  category_id: PR.PS
+  description: Log records are generated and made available for continuous monitoring
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id016
+- id: NIST-PR.PS-05
+  framework: NIST_CSF_2.0
+  function: PROTECT
+  category: Platform Security
+  category_id: PR.PS
+  description: Installation and execution of unauthorized software are prevented
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id016
+- id: NIST-PR.PS-06
+  framework: NIST_CSF_2.0
+  function: PROTECT
+  category: Platform Security
+  category_id: PR.PS
+  description: Secure software development practices are integrated, and their performance is monitored
+    throughout the software development life cycle
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id016
+- id: NIST-RC.CO-03
+  framework: NIST_CSF_2.0
+  function: RECOVER
+  category: Incident Recovery Communication
+  category_id: RC.CO
+  description: Recovery activities and progress in restoring operational capabilities are communicated
+    to designated internal and external stakeholders
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: &id017
+  - notification-engine
+- id: NIST-RC.CO-04
+  framework: NIST_CSF_2.0
+  function: RECOVER
+  category: Incident Recovery Communication
+  category_id: RC.CO
+  description: Public updates on incident recovery are shared using approved methods and messaging
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id017
+- id: NIST-RC.RP-01
+  framework: NIST_CSF_2.0
+  function: RECOVER
+  category: Incident Recovery Plan Execution
+  category_id: RC.RP
+  description: The recovery portion of the incident response plan is executed once initiated from the
+    incident response process
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: &id018
+  - backup-restore
+  - case-management
+- id: NIST-RC.RP-02
+  framework: NIST_CSF_2.0
+  function: RECOVER
+  category: Incident Recovery Plan Execution
+  category_id: RC.RP
+  description: Recovery actions are selected, scoped, prioritized, and performed
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id018
+- id: NIST-RC.RP-03
+  framework: NIST_CSF_2.0
+  function: RECOVER
+  category: Incident Recovery Plan Execution
+  category_id: RC.RP
+  description: The integrity of backups and other restoration assets is verified before using them for
+    restoration
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id018
+- id: NIST-RC.RP-04
+  framework: NIST_CSF_2.0
+  function: RECOVER
+  category: Incident Recovery Plan Execution
+  category_id: RC.RP
+  description: Critical mission functions and cybersecurity risk management are considered to establish
+    post-incident operational norms
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id018
+- id: NIST-RC.RP-05
+  framework: NIST_CSF_2.0
+  function: RECOVER
+  category: Incident Recovery Plan Execution
+  category_id: RC.RP
+  description: The integrity of restored assets is verified, systems and services are restored, and normal
+    operating status is confirmed
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id018
+- id: NIST-RC.RP-06
+  framework: NIST_CSF_2.0
+  function: RECOVER
+  category: Incident Recovery Plan Execution
+  category_id: RC.RP
+  description: The end of incident recovery is declared based on criteria, and incident-related documentation
+    is completed
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id018
+- id: NIST-RS.AN-03
+  framework: NIST_CSF_2.0
+  function: RESPOND
+  category: Incident Analysis
+  category_id: RS.AN
+  description: Analysis is performed to establish what has taken place during an incident and the root
+    cause of the incident
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: &id019
+  - ai-agent
+  - enrichment-service
+  - case-management
+- id: NIST-RS.AN-06
+  framework: NIST_CSF_2.0
+  function: RESPOND
+  category: Incident Analysis
+  category_id: RS.AN
+  description: Actions performed during an investigation are recorded, and the records' integrity and
+    provenance are preserved
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id019
+- id: NIST-RS.AN-07
+  framework: NIST_CSF_2.0
+  function: RESPOND
+  category: Incident Analysis
+  category_id: RS.AN
+  description: Incident data and metadata are collected, and their integrity and provenance are preserved
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id019
+- id: NIST-RS.AN-08
+  framework: NIST_CSF_2.0
+  function: RESPOND
+  category: Incident Analysis
+  category_id: RS.AN
+  description: An incident's magnitude is estimated and validated
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id019
+- id: NIST-RS.CO-02
+  framework: NIST_CSF_2.0
+  function: RESPOND
+  category: Incident Response Reporting and Communication
+  category_id: RS.CO
+  description: Internal and external stakeholders are notified of incidents
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: &id020
+  - notification-engine
+  - report-generator
+- id: NIST-RS.CO-03
+  framework: NIST_CSF_2.0
+  function: RESPOND
+  category: Incident Response Reporting and Communication
+  category_id: RS.CO
+  description: Information is shared with designated internal and external stakeholders
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id020
+- id: NIST-RS.MA-01
+  framework: NIST_CSF_2.0
+  function: RESPOND
+  category: Incident Management
+  category_id: RS.MA
+  description: The incident response plan is executed in coordination with relevant third parties once
+    an incident is declared
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: &id021
+  - case-management
+  - playbook-engine
+  - ai-agent
+- id: NIST-RS.MA-02
+  framework: NIST_CSF_2.0
+  function: RESPOND
+  category: Incident Management
+  category_id: RS.MA
+  description: Incident reports are triaged and validated
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id021
+- id: NIST-RS.MA-03
+  framework: NIST_CSF_2.0
+  function: RESPOND
+  category: Incident Management
+  category_id: RS.MA
+  description: Incidents are categorized and prioritized
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id021
+- id: NIST-RS.MA-04
+  framework: NIST_CSF_2.0
+  function: RESPOND
+  category: Incident Management
+  category_id: RS.MA
+  description: Incidents are escalated or elevated as needed
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id021
+- id: NIST-RS.MA-05
+  framework: NIST_CSF_2.0
+  function: RESPOND
+  category: Incident Management
+  category_id: RS.MA
+  description: The criteria for initiating incident recovery are applied
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id021
+- id: NIST-RS.MI-01
+  framework: NIST_CSF_2.0
+  function: RESPOND
+  category: Incident Mitigation
+  category_id: RS.MI
+  description: Incidents are contained
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: &id022
+  - executor
+  - haproxy-connector
+  - policy-guard
+- id: NIST-RS.MI-02
+  framework: NIST_CSF_2.0
+  function: RESPOND
+  category: Incident Mitigation
+  category_id: RS.MI
+  description: Incidents are eradicated
+  owner: TBD
+  status: Not implemented
+  maturity: 0
+  review_date: null
+  platform_features: *id022

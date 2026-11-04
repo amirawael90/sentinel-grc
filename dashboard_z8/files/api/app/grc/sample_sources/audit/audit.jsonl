@@ -1,0 +1,2 @@
+{"ts": "2026-10-20T10:00:00Z", "actor": "agent", "action": "decision", "target": "incident-1", "result": "ok"}
+{"ts": "2026-10-20T10:00:02Z", "actor": "executor", "action": "block_ip", "target": "203.0.113.7", "result": "ok"}

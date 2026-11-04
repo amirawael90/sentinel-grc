@@ -1,0 +1,6 @@
+# SAMPLE rule
+id: R-002
+title: SQL injection pattern
+technique: T1190
+condition: url_contains_union_select
+severity: high

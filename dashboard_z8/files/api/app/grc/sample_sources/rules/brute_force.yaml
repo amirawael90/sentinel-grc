@@ -1,0 +1,8 @@
+# SAMPLE rule (real rules come from the detection engine)
+id: R-001
+title: Brute force login
+technique: T1110
+condition: failed_login
+threshold: 5
+window_seconds: 60
+severity: high

@@ -50,3 +50,8 @@
 - "Decisions needed" is derived from the data (overdue tasks, tasks without owner, open critical findings, Draft policies, low compliance).
 - Weekly: schedule the same command, e.g. Windows Task Scheduler: `schtasks /Create /SC WEEKLY /D MON /ST 08:00 /TN SentinelReports /TR "python C:\path\to\grc\reports.py"`.
 - Install: `pip install -r requirements.txt`
+
+## Z8 Dashboard pages (Compliance Center, Policy Library)
+- Built inside Mostafa's React + FastAPI dashboard (github.com/eng-ghalwash/sentinel-task7). Package: `z8_dashboard.zip` (run `python apply_z8.py PATH_TO_sentinel-task7`).
+- API: `/api/grc/compliance`, `/controls` (server-side paging and filters), `/policies`, `/policies/{id}/acknowledge`, `/evidence/collect`; roles: Admin, Analyst, Auditor read; Admin and Analyst write.
+- Pages: gauges per framework, per-function bars, biggest gaps, quickest wins, controls table with evidence counts; policy list with the playbook parameters each policy sets, exceptions and acknowledgements.
