@@ -1,0 +1,8 @@
+[
+  {"id": "F-001", "title": "SQL injection in product search", "endpoint": "/search", "cwe": "CWE-89", "severity": "critical", "status": "open", "evidence": "SAMPLE: ' OR 1=1-- returns all rows", "asset": "skyline-web"},
+  {"id": "F-002", "title": "Stored XSS in comments", "endpoint": "/comments", "cwe": "CWE-79", "severity": "high", "status": "open", "evidence": "SAMPLE: script tag stored and rendered", "asset": "skyline-web"},
+  {"id": "F-003", "title": "Weak password hashing", "endpoint": "/login", "cwe": "CWE-916", "severity": "high", "status": "open", "evidence": "SAMPLE: unsalted fast hash", "asset": "skyline-web"},
+  {"id": "F-004", "title": "Unrestricted file upload", "endpoint": "/upload", "cwe": "CWE-434", "severity": "high", "status": "open", "evidence": "SAMPLE: .php accepted", "asset": "skyline-web"},
+  {"id": "F-005", "title": "Missing security headers", "endpoint": "/", "cwe": "CWE-693", "severity": "medium", "status": "open", "evidence": "SAMPLE: no CSP, no X-Frame-Options", "asset": "skyline-web"},
+  {"id": "F-006", "title": "Verbose error messages", "endpoint": "/api", "cwe": "CWE-209", "severity": "low", "status": "open", "evidence": "SAMPLE: stack trace in response", "asset": "skyline-web"}
+]

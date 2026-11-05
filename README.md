@@ -55,3 +55,11 @@
 - Built inside Mostafa's React + FastAPI dashboard (github.com/eng-ghalwash/sentinel-task7). Package: `z8_dashboard.zip` (run `python apply_z8.py PATH_TO_sentinel-task7`).
 - API: `/api/grc/compliance`, `/controls` (server-side paging and filters), `/policies`, `/policies/{id}/acknowledge`, `/evidence/collect`; roles: Admin, Analyst, Auditor read; Admin and Analyst write.
 - Pages: gauges per framework, per-function bars, biggest gaps, quickest wins, controls table with evidence counts; policy list with the playbook parameters each policy sets, exceptions and acknowledgements.
+
+## Z9 Dashboard pages (Evidence and Audit, Reports)
+- Same package as Z8: `grc_dashboard.zip` -> `python apply_grc_dashboard.py PATH_TO_sentinel-task7` (also adds `reportlab` to the API requirements).
+- Evidence browser: filter by control, source, state and period; SHA-256 shown; "Verify integrity" re-hashes every file.
+- Audit log: search by actor, action, target, result and dates; CSV export; "Verify chain" checks the hash chain (tamper-evident); import of the executor's audit lines (Mohamed's contract). Dashboard writes (collect evidence, acknowledge policy, generate report, exports) are logged automatically.
+- Reports: generate executive/technical PDFs for 7/30/90 days, history, preview, download. Weekly: schedule `python reports.py`.
+- Roles: Admin, Analyst, Auditor read and export; Admin and Analyst write.
+- Limits: deleting the last audit entries cannot be detected from the file alone (keep the head hash); sample entries are flagged `sample`.
