@@ -1,0 +1,50 @@
+digraph arch {
+  compound=true; rankdir=TB; nodesep=0.35; ranksep=0.55; splines=ortho;
+  graph [fontname="DejaVu Sans", fontsize=14, labeljust=l, style="rounded,filled", fillcolor="#F7F8FA", color="#9AA5B1"];
+  node  [fontname="DejaVu Sans", fontsize=11, shape=box, style="rounded,filled", fillcolor="#E8EEF9", color="#14213D", width=2.1, height=0.6];
+  edge  [fontname="DejaVu Sans", fontsize=10, color="#555555", arrowsize=0.8];
+
+  subgraph cluster_src { label="1  Sources";
+    s1 [label="Network flows\ncicflowmeter sniffer"]; s2 [label="Web and HAProxy logs\nlog-shipper"];
+    s3 [label="Website auth events\nskyline-web"]; s4 [label="Pentest module\nscans and markers"]; s5 [label="External systems\nPOST /events"];
+    {rank=same; s1; s2; s3; s4; s5;} s1->s2->s3->s4->s5 [style=invis]; }
+
+  subgraph cluster_trn { label="2  Transport and storage";
+    t1 [label="Redis Streams\nevents, alerts, incidents,\nactions, audit", shape=cylinder, fillcolor="#FFF4D6"];
+    t2 [label="MongoDB\nalerts, incidents, cases,\nactions, assets, audit", shape=cylinder, fillcolor="#FFF4D6"];
+    ta [shape=point, style=invis, width=0.01, label=""]; {rank=same; t1; ta; t2;} t1->ta->t2 [style=invis]; }
+
+  subgraph cluster_det { label="3  Detection and correlation";
+    d1 [label="ML service\nRandom Forest"]; d2 [label="Rate layer"]; d3 [label="Rule engine\nYAML rules"]; d4 [label="Correlator\nincidents and severity"];
+    da [shape=point, style=invis, width=0.01, label=""]; {rank=same; d1; d2; da; d3; d4;} d1->d2->da->d3->d4 [style=invis]; }
+
+  subgraph cluster_int { label="4  Intelligence";
+    i1 [label="Enrichment\nVirusTotal, AbuseIPDB,\nGeoIP, history"]; i2 [label="MITRE ATT&CK\ntechnique mapping"];
+    ia [shape=point, style=invis, width=0.01, label=""]; {rank=same; i1; ia; i2;} i1->ia->i2 [style=invis]; }
+
+  subgraph cluster_dec { label="5  Decision";
+    a1 [label="AI agents\ntriage, investigator,\nresponder"]; a2 [label="Fallback\ndecision engine"]; a3 [label="Policy Guard\ncode, gates G0 to G3", shape=hexagon, fillcolor="#FDE2E2"];
+    {rank=same; a1; a2; a3;} a1->a2->a3 [style=invis]; }
+
+  subgraph cluster_act { label="6  Action";
+    x1 [label="Playbook engine\nYAML"]; x2 [label="Executor\nidempotent, audited"]; x3 [label="Connectors\nHAProxy, website API"];
+    {rank=same; x1; x2; x3;} x1->x2->x3 [style=invis]; }
+
+  subgraph cluster_grc { label="7  Business layer: GRC  (green = Part Two: compliance, evidence, policies, reports, notifications)";
+    g1 [label="Assets and\nrisk register"]; g2 [label="Control library and\ncompliance scoring", fillcolor="#DFF3E3", color="#2E7D32"];
+    g3 [label="Evidence collector\nand audit log", fillcolor="#DFF3E3", color="#2E7D32"]; g4 [label="Policy library and\nremediation tracker", fillcolor="#DFF3E3", color="#2E7D32"];
+    g5 [label="Notification engine and\nreport generator", fillcolor="#DFF3E3", color="#2E7D32"];
+    {rank=same; g1; g2; g3; g4; g5;} g1->g2->g3->g4->g5 [style=invis]; }
+
+  subgraph cluster_pre { label="8  Presentation";
+    p1 [label="FastAPI\nREST and live updates"]; p2 [label="React dashboard\npages by role"]; p3 [label="Client portal\nread-only"];
+    {rank=same; p1; p2; p3;} p1->p2->p3 [style=invis]; }
+
+  s3 -> ta [ltail=cluster_src, lhead=cluster_trn, label=" normalised events"];
+  ta -> da [ltail=cluster_trn, lhead=cluster_det, label=" events"];
+  da -> ia [ltail=cluster_det, lhead=cluster_int, label=" alerts and incidents"];
+  ia -> a2 [ltail=cluster_int, lhead=cluster_dec, label=" evidence bundle"];
+  a2 -> x2 [ltail=cluster_dec, lhead=cluster_act, label=" verdict, allowed actions"];
+  x2 -> g3 [ltail=cluster_act, lhead=cluster_grc, label=" results, audit records"];
+  g3 -> p2 [ltail=cluster_grc, lhead=cluster_pre, label=" data and reports"];
+}

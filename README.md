@@ -63,3 +63,8 @@
 - Reports: generate executive/technical PDFs for 7/30/90 days, history, preview, download. Weekly: schedule `python reports.py`.
 - Roles: Admin, Analyst, Auditor read and export; Admin and Analyst write.
 - Limits: deleting the last audit entries cannot be detected from the file alone (keep the head hash); sample entries are flagged `sample`.
+
+## Z10 Documentation
+- `docs/ARCHITECTURE.md`: architecture, data flow, GRC components and policy-to-action diagrams (sources and renders in `docs/diagrams/`).
+- `docs/README.md`: documentation index and the per-component README checklist for the review.
+- Final report chapters (GRC and operations) are in a separate document.

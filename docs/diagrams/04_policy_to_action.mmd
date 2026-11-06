@@ -1,0 +1,26 @@
+%%{init: {"theme": "base", "themeVariables": {"fontSize": "14px"}}}%%
+sequenceDiagram
+  autonumber
+  participant Own as Policy owner
+  participant Lib as Policy library
+  participant Eng as Playbook engine
+  participant PG as Policy Guard
+  participant Ex as Executor
+  participant Nt as Notification engine
+  participant Au as Audit log
+  Own->>Lib: set block time to 24 h and approve POL-001
+  Note over Lib: only Approved policies take effect
+  Eng->>Lib: playbook_context("web_bruteforce_response")
+  Lib-->>Eng: policy.bruteforce_block_ttl_minutes = 1440
+  Note over Eng,Lib: shown working in dry-run against the real engine,<br/>the live playbook still has to adopt policy.* values
+  Eng->>PG: propose block_ip, ttl 1440 (needs gate G3)
+  alt agent confidence below the G3 gate
+    PG-->>Eng: rejected (limit for the gate)
+    PG->>Au: rejection recorded
+  else allowed
+    PG->>Ex: action request
+    Ex->>Ex: add acl, then verify (show acl)
+    Ex->>Au: action and verification recorded
+    Ex->>Nt: result
+    Nt-->>Own: what was done, why, how to undo
+  end

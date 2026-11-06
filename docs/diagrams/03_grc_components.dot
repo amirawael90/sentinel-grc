@@ -1,0 +1,41 @@
+digraph grc {
+  rankdir=TB; nodesep=0.4; ranksep=0.7; splines=true; newrank=true;
+  graph [fontname="DejaVu Sans", fontsize=13];
+  node  [fontname="DejaVu Sans", fontsize=11, shape=box, style="rounded,filled", fillcolor="#E8EEF9", color="#14213D", width=2.0, height=0.65];
+  edge  [fontname="DejaVu Sans", fontsize=10, color="#555555", arrowsize=0.8];
+
+  // inputs (dashed border = sample data until the owner's component is connected)
+  fw  [label="Official frameworks\nNIST CSF 2.0, ISO 27001,\nCIS v8.1, OWASP Top 10"];
+  fs  [label="Platform feature status\nplanned, in progress, built"];
+  srcs[label="Evidence sources\nrules, config, audit,\nactions, scan reports", style="rounded,filled,dashed"];
+  fnd [label="Pentest findings\nFinding contract", style="rounded,filled,dashed"];
+  act [label="Executed actions\nActionRequest + ActionResult", style="rounded,filled,dashed"];
+  {rank=same; fw; fs; srcs; fnd; act;}
+
+  cl [label="Control library\n362 controls mapped\nto platform features", fillcolor="#DFF3E3", color="#2E7D32"];
+  cs [label="Compliance scoring\npercent, gaps, quick wins", fillcolor="#DFF3E3", color="#2E7D32"];
+  ec [label="Evidence collector\nhash, stale, verify", fillcolor="#DFF3E3", color="#2E7D32"];
+  rt [label="Remediation tracker\ncloses only after retest", fillcolor="#DFF3E3", color="#2E7D32"];
+  ne [label="Notification engine\nrouting, dedup, escalation", fillcolor="#DFF3E3", color="#2E7D32"];
+  {rank=same; cl; cs; ec; rt; ne;}
+
+  pl [label="Policy library\napproved policies set\nplaybook parameters", fillcolor="#DFF3E3", color="#2E7D32"];
+  al [label="Audit log\nhash chain, search, export", fillcolor="#DFF3E3", color="#2E7D32"];
+  rg [label="Report generator\nexecutive + technical PDF", fillcolor="#DFF3E3", color="#2E7D32"];
+  {rank=same; pl; al; rg;}
+
+  pb [label="Playbook engine\n{{ policy.parameter }}", fillcolor="#FFF4D6"];
+  ch [label="Telegram, email,\nwebhook", fillcolor="#FFF4D6"];
+  rk [label="Risk job and KRIs\nrisk signals, metrics", fillcolor="#FFF4D6"];
+  db [label="Dashboard pages\nCompliance, Policies,\nEvidence and Audit, Reports", fillcolor="#FFF4D6"];
+  {rank=same; pb; ch; rk; db;}
+
+  fw -> cl; fs -> cs; srcs -> ec; fnd -> rt; act -> ne;
+  cl -> cs; ec -> cs [label=" evidence counts"]; cs -> rt [label=" gap tasks"];
+  act -> al [style=dashed];
+  ne -> al; ne -> ch;
+  rt -> rk [label=" risk signals"];
+  pl -> pb [label=" policy.* values"];
+  cs -> rg; ec -> rg; rt -> rg; pl -> rg;
+  al -> db; rg -> db; cs -> db; pl -> db;
+}

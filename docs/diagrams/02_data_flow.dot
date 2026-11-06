@@ -1,0 +1,44 @@
+digraph flow {
+  rankdir=TB; nodesep=0.5; ranksep=0.75; splines=true; newrank=true;
+  graph [fontname="DejaVu Sans", fontsize=13];
+  node  [fontname="DejaVu Sans", fontsize=11, shape=box, style="rounded,filled", fillcolor="#E8EEF9", color="#14213D", width=2.0, height=0.65];
+  edge  [fontname="DejaVu Sans", fontsize=10, color="#555555", arrowsize=0.8];
+
+  // row 1, left to right
+  src [label="Sources\nflows, logs, auth events"];
+  ev  [label="stream: events", shape=cylinder, fillcolor="#FFF4D6"];
+  det [label="Detectors\nML, rate, rules"];
+  al  [label="stream: alerts", shape=cylinder, fillcolor="#FFF4D6"];
+  cor [label="Correlator\nIP + attack family"];
+  {rank=same; src; ev; det; al; cor;}
+  src -> ev [label=" XADD"]; ev -> det [label=" XREADGROUP"]; det -> al; al -> cor [label=" alert"];
+
+  // row 2, right to left (snake)
+  inc [label="stream: incidents", shape=cylinder, fillcolor="#FFF4D6"];
+  enr [label="Enrichment\nevidence bundle"];
+  agt [label="AI agent\nverdict and actions"];
+  pg  [label="Policy Guard", shape=hexagon, fillcolor="#FDE2E2"];
+  act [label="stream: actions", shape=cylinder, fillcolor="#FFF4D6"];
+  {rank=same; inc; enr; agt; pg; act;}
+  act -> pg [dir=back, label=" allowed"]; pg -> agt [dir=back, label=" proposed action"]; agt -> enr [dir=back]; enr -> inc [dir=back];
+  cor -> inc [label=" incident + score"];
+
+  // row 3, left to right
+  exe [label="Executor\nHAProxy block, lock account"];
+  ver [label="Verification\nre-check (show acl)"];
+  aud [label="stream: audit\nhash-chained log", shape=cylinder, fillcolor="#DFF3E3", color="#2E7D32"];
+  evd [label="Evidence collector\nSHA-256 + timestamp", fillcolor="#DFF3E3", color="#2E7D32"];
+  cmp [label="Compliance scoring\nper framework", fillcolor="#DFF3E3", color="#2E7D32"];
+  {rank=same; exe; ver; aud; evd; cmp;}
+  exe -> ver; ver -> aud; aud -> evd; evd -> cmp [label=" evidence counts"];
+  act -> exe;
+
+  // row 4
+  nt  [label="Notification engine\nwhat, why, how to undo", fillcolor="#DFF3E3", color="#2E7D32"];
+  rsk [label="Risk update\nasset and likelihood"];
+  cas [label="Case timeline\nand dashboards"];
+  {rank=same; nt; rsk; cas;}
+  nt -> rsk -> cas [style=invis];
+  exe -> nt; exe -> rsk [style=dashed, label=" findings, overdue"]; aud -> cas;
+  pg -> aud [style=dashed, constraint=false, label=" rejected + reason"];
+}
